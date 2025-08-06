@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d4f3e4, #e9f9ef);
+  color: #1e3d2f;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2a5d3d;
+}
+
+.organizations {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #2a5d3d;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4ab37c;
+}
+
+/* Descripción */
+.description {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2a5d3d;
+  font-size: 1.1rem;
+}
+
+/* Concursos */
+.contests {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contest {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  text-align: center;
+}
+
+.contest h2 {
+  color: #2a5d3d;
+  margin-bottom: 15px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contest-link {
+  display: inline-block;
+  background: rgba(42, 93, 61, 0.2);
+  color: #2a5d3d;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contest-link:hover {
+  background: #4ab37c;
+  color: white;
+}
+
+.eco-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2e7d32; /* verde ecológico */
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .contests {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contest {
+    width: 45%;
+  }
+}
